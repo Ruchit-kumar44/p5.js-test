@@ -128,18 +128,6 @@ Thanks to all our amazing contributors!
 
 Thanks to all our amazing contributors!
 
-<!-- Contributor avatars -->
-<p align="center">
-  <a href="https://github.com/jay-manday">
-    <img src="https://avatars.githubusercontent.com/jay-manday" width="80px;" alt="jay-manday"/><br /><sub><b>jay-manday</b></sub>
-  </a>
-  <a href="https://github.com/russomf">
-    <img src="https://avatars.githubusercontent.com/russomf" width="80px;" alt="russomf"/><br /><sub><b>russomf</b></sub>
-  </a>
-  <a href="https://github.com/jedahan">
-    <img src="https://avatars.githubusercontent.com/jedahan" width="80px;" alt="jedahan"/><br /><sub><b>jedahan</b></sub>
-  </a>
-  <a href="https://github.com/nok">
-    <img src="https://avatars.githubusercontent.com/nok" width="80px;" alt="nok"/><br /><sub><b>nok</b></sub>
-  </a>
-</p>
+<a href="https://github.com/processing/p5.js/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=processing/p5.js" />
+</a>
