@@ -131,6 +131,6 @@ Thanks to all our amazing contributors!
 
 <p align="center">
 <a href="https://github.com/processing/p5.js/graphs/contributors">
-<img src="./contributors.svg" alt="Contributors" width="900" />
+<img src="./images/contributors.png" alt="Contributors banner" />
 </a>
 </p>
