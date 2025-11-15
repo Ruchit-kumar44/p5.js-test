@@ -4,7 +4,7 @@ import sharp from 'sharp';
 import fetch from 'node-fetch';
 
 const CONTRIBUTORS_FILE = path.resolve('contributors.md');
-const OUTPUT_FILE = path.resolve('docs/images/contributors.png');
+const OUTPUT_FILE = path.resolve('contributors.png');
 
 // how many contributors to include
 const LIMIT = 350;

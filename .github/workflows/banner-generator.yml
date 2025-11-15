@@ -1,0 +1,46 @@
+name: Update Contributors Banner
+
+on:
+  push:
+    paths:
+      - "contributors.md"
+  workflow_dispatch:
+
+jobs:
+  build-banner:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Banner Generator Script
+        run: node utils/allContributors-image/image.js
+
+      - name: Check if contributors.png changed
+        id: git-check
+        run: |
+          if git diff --exit-code contributors.png; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and Push contributors.png
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add contributors.png
+          git commit -m "chore: update contributors banner"
+          git push
