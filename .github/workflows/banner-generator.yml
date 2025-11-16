@@ -3,7 +3,7 @@ name: Update Contributors Banner
 on:
   push:
     paths:
-      - "contributors.md"
+      - "CONTRIBUTORS.md"
   workflow_dispatch:
 
 jobs:
